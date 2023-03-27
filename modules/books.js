@@ -5,7 +5,7 @@ class Book {
     this.books = [];
   }
 
-  addBook(title, author) {
+  addBook = (title, author) =>{
     const books = { title, author };
     bookList.push(books);
     localStorage.setItem('book-list', JSON.stringify(bookList));
