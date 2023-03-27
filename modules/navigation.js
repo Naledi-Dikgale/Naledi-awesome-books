@@ -6,7 +6,7 @@ const bookListSection = document.querySelector('#booklist-section');
 const addbookInputs = document.querySelector('#addbook-inputs');
 const contactSection = document.querySelector('#contact-section');
 
-function showBookListSection() {
+ const showBookListSection = () => {
   bookListSection.classList.add('visible');
   addbookInputs.classList.add('hidden');
   contactSection.classList.add('hidden');
@@ -14,7 +14,7 @@ function showBookListSection() {
   contactSection.classList.remove('visible');
 }
 
-function showAddBookInputs() {
+const showAddBookInputs = () => {
   bookListSection.classList.remove('visible');
   contactSection.classList.remove('visible');
   bookListSection.classList.add('hidden');
@@ -22,7 +22,7 @@ function showAddBookInputs() {
   addbookInputs.classList.add('visible');
 }
 
-function showContactSection() {
+const showContactSection = () => {
   addbookInputs.classList.add('hidden');
   bookListSection.classList.add('hidden');
   contactSection.classList.add('visible');
