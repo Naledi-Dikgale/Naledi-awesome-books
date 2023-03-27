@@ -1,12 +1,11 @@
 import Book from './modules/books.js';
 import './modules/navigation.js';
 import './modules/date.js';
-// import './modules/hover.js';
+
 const container = document.querySelector('.collection');
 const BookName = document.querySelector('#book');
 const authorName = document.querySelector('#author');
 const btn = document.querySelector('form');
-
 
 const book = new Book();
 btn.addEventListener('submit', book.addBook);
@@ -50,13 +49,3 @@ contactLink.addEventListener('click', () => {
   addbookInputs.classList.remove('visible');
   bookListSection.classList.remove('visible');
 });
-
-
- hover = (e) => {
-  const links = document.getElementsByTagName('a');
-  for (let i = 0; i < links.length; i += 1) {
-    links[i].classList.remove('active');
-  }
-  e.currentTarget.classList.add('active');
-}
-hover(this);
