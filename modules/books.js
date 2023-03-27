@@ -11,7 +11,7 @@ class Book {
     localStorage.setItem('book-list', JSON.stringify(bookList));
   }
 
-  displayBlock() {
+  displayBlock = () => {
     const container = document.querySelector('.collection');
     container.innerHTML = '';
     bookList.forEach((book, index) => {
@@ -26,7 +26,7 @@ class Book {
     });
   }
 
-  remove(index) {
+  remove = (index) => {
     bookList.splice(index, 1);
     localStorage.setItem('book-list', JSON.stringify(bookList));
     this.displayBlock();
