@@ -29,6 +29,7 @@ class Book {
         `;
     });
   }
+  
 // remove method
   remove = (index) => {
     bookList.splice(index, 1);
