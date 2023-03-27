@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/index.css" />
+   
+    <title>awesome books</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="overall-navi">
+        <div class="nav-1">
+          <a href="#" class="logo">Awesome Books</a>
+        </div>
+
+        <div class="nav-2">
+          <nav>
+            <ul class="desktop-navi">
+              <li>
+                <a href="#booklist-section" id="list-link" onclick="hover(event)" class="nav-links">Lists</a>
+              </li>
+              <li>
+                <a href="#addbook-inputs" id="addbook-link" onclick="hover(event)" class="nav-links"
+                  >Add books</a
+                >
+              </li>
+              <li>
+                <a href="#contact-section" id="contact-link" onclick="hover(event)" class="nav-links"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div id="time">
+        
+      </div>
+      <section class="top-info">
+      </section>
+      <section id="booklist-section" class="ok">
+        <h1>Books List</h1>
+        <div class="collection"></div>
+        <span></span>
+      </section>
+
+      <section id="addbook-inputs" class="hidden">
+        <div class="inputs">
+          <h1>Add a new book</h1>
+          <form action="">
+            <input
+              type="text"
+              name="book"
+              id="book"
+              placeholder="title"
+              required
+            />
+            <input
+              type="text"
+              name="author"
+              id="author"
+              placeholder="author"
+              required
+            />
+            <input type="submit" name="" value="Add" class="btn" id="submit" />
+          </form>
+        </div>
+      </section>
+
+      <section id="contact-section" class="hidden">
+        <div class="contact-wrap">
+          <h1>Contact Information</h1>
+          <p>
+            Do you have any questions or you just want to say "Hello"? You can
+            reach out to us!
+          </p>
+          <ul>
+            <li>naledi22khosi@gmail.com</li>
+            <li>+27604085813</li>
+            <li>21 Castle Close 09 Capetown</li>
+          </ul>
+        </div>
+      </section>
+      <footer>
+        <p>&#169; Copyright &nbsp;&nbsp;&nbsp; ...</p>
+      </footer>
+    </div>
+    <script  type="module" src="./index.js"></script>
+  </body>
+</html>
