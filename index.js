@@ -52,7 +52,7 @@ contactLink.addEventListener('click', () => {
 });
 
 
-function hover(e) {
+ hover = (e) => {
   const links = document.getElementsByTagName('a');
   for (let i = 0; i < links.length; i += 1) {
     links[i].classList.remove('active');
